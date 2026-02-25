@@ -37,7 +37,7 @@ Utilizamos una paleta semántica suave para evitar la fatiga visual:
 * 🔵 **Tratamiento/Seguimiento (Neutros):** `#3B82F6` / `#93C5FD`
 * 🌑 **Fondos:** `#1E293B` con textos en `#F8FAFC` y `#CBD5E1`.
 
-![Paleta de Colores](images/paleta_colores.jpg)
+![Paleta de Colores](images/paleta_colores.jpeg)
 
 ---
 
