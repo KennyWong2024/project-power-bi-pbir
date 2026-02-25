@@ -1,0 +1,62 @@
+table medicos
+	lineageTag: 50f5ef1b-58c8-41c2-92ac-00fe3d3f9412
+
+	column MedicoID
+		dataType: string
+		lineageTag: c29ba2a2-781a-426c-a715-e480b1b005c5
+		summarizeBy: none
+		sourceColumn: MedicoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: 4fd0d7fc-3538-4349-81bd-69d21cc00b75
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Especialidad
+		dataType: string
+		lineageTag: 2d198337-d0b0-4683-af81-4cafd6e8269b
+		summarizeBy: none
+		sourceColumn: Especialidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hospital
+		dataType: string
+		lineageTag: 8e24ad08-8ceb-4b0b-9df0-5506b848f84b
+		summarizeBy: none
+		sourceColumn: Hospital
+
+		annotation SummarizationSetBy = Automatic
+
+	column TarifaConsulta
+		dataType: double
+		lineageTag: a8776197-dc4a-4762-a9f7-d7ac17c469e3
+		summarizeBy: none
+		sourceColumn: TarifaConsulta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition medicos = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\kenny\Documents\Projects\learning-power-bi\data\medicos.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"MedicoID", type text}, {"Nombre", type text}, {"Especialidad", type text}, {"Hospital", type text}, {"TarifaConsulta", Int64.Type}}),
+				    #"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')" = Table.ReplaceValue(#"Changed Type","","Sin Asignar",Replacer.ReplaceValue,{"Hospital"}),
+				    #"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')" = Table.TransformColumns(#"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')",{{"Nombre", Text.Proper, type text}}),
+				    #"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)" = Table.ReplaceValue(#"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')",0,250000,Replacer.ReplaceValue,{"TarifaConsulta"})
+				in
+				    #"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

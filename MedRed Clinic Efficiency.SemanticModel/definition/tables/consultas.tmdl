@@ -1,0 +1,92 @@
+table consultas
+	lineageTag: 9b26b99b-5c85-43e4-b727-d20be69282f7
+
+	column ConsultaID
+		dataType: string
+		lineageTag: 951585a9-98bb-40ba-8202-3ccb878b5c99
+		summarizeBy: none
+		sourceColumn: ConsultaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PacienteID
+		dataType: string
+		lineageTag: 7204ce73-5adb-47a9-9ee0-347bce9d1fc5
+		summarizeBy: none
+		sourceColumn: PacienteID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MedicoID
+		dataType: string
+		lineageTag: 3068ba35-fb9b-4e47-b9ea-f7bda8a4f31a
+		summarizeBy: none
+		sourceColumn: MedicoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 236f0069-f527-4b35-a68b-fe35afb79875
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Diagnostico
+		dataType: string
+		lineageTag: aa906da4-04c5-475b-be7e-e05e76d52053
+		summarizeBy: none
+		sourceColumn: Diagnostico
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duracion_min
+		dataType: int64
+		formatString: 0
+		lineageTag: f34a7991-8fa3-424a-9597-df5cf2e6a011
+		summarizeBy: sum
+		sourceColumn: Duracion_min
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resultado
+		dataType: string
+		lineageTag: 4f16a44c-7113-4098-832e-d492757aa9f2
+		summarizeBy: none
+		sourceColumn: Resultado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Categoria Duracion'
+		dataType: string
+		lineageTag: 60151a10-3c6d-4699-b4e3-b7cd40a02839
+		summarizeBy: none
+		sourceColumn: Categoria Duracion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition consultas = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\kenny\Documents\Projects\learning-power-bi\data\consultas.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ConsultaID", type text}, {"PacienteID", type text}, {"MedicoID", type text}, {"Fecha", type date}, {"Diagnostico", type text}, {"Duracion_min", Int64.Type}, {"Resultado", type text}}),
+				    #"10.#(tab)Diagnóstico vacío: CON005 (reemplazar con 'Sin Diagnóstico Registrado')" = Table.ReplaceValue(#"Changed Type","","Sin Diagnóstico Registrado",Replacer.ReplaceValue,{"Diagnostico"}),
+				    #"11.#(tab)PacienteID inexistente: CON006 usa 'PAC999' (eliminar registro huérfano)" = Table.SelectRows(#"10.#(tab)Diagnóstico vacío: CON005 (reemplazar con 'Sin Diagnóstico Registrado')", each ([PacienteID] <> "PAC999")),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"11.#(tab)PacienteID inexistente: CON006 usa 'PAC999' (eliminar registro huérfano)",{{"Fecha", type text}}),
+				    #"09" = Table.ReplaceValue(#"Changed Type1","/","-",Replacer.ReplaceText,{"Fecha"}),
+				    #"Categoria Duracion" = Table.AddColumn(#"09", "Categoria Duracion", each if [Duracion_min] <= 30 then "Corta" else if [Duracion_min] <= 60 then "media" else "Larga"),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Categoria Duracion",{{"Categoria Duracion", Text.Proper, type text}}),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"Fecha", type date}})
+				in
+				    #"Changed Type2"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

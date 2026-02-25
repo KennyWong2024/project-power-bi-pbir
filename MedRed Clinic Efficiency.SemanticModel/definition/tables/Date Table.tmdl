@@ -1,0 +1,34 @@
+table 'Date Table'
+	lineageTag: 302f1ffd-8374-4907-ad34-5f864b5051a0
+
+	column 'Date Table'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d761b0fc-c44d-4150-91f2-f3417b21a611
+		summarizeBy: none
+		sourceColumn: Date Table
+
+		variation Variation
+			isDefault
+			relationship: b56cf8ac-0389-4649-8a7f-3c29aefea128
+			defaultHierarchy: LocalDateTable_68347dda-1535-4608-ba54-447902079a6e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'Date Table' = m
+		mode: import
+		source =
+				let
+				    Source = {Number.From(#date(2024,1,1))..Number.From(#date(2024,12,31))},
+				    #"Converted to Table" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Converted to Table",{{"Column1", type date}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Date Table"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

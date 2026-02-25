@@ -1,0 +1,23 @@
+relationship 28098108-95cf-4d45-aebc-4d00db13f574
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pacientes.FechaNacimiento
+	toColumn: LocalDateTable_3f3a2fbc-c5ab-44ab-92b0-3b678488569b.Date
+
+relationship AutoDetected_b56a58b4-e64f-433d-9b87-11621c6ca695
+	fromColumn: consultas.PacienteID
+	toColumn: pacientes.PacienteID
+
+relationship AutoDetected_7dd5a0e0-aa3b-419f-a86f-b954ceea1231
+	fromColumn: consultas.MedicoID
+	toColumn: medicos.MedicoID
+
+relationship b56cf8ac-0389-4649-8a7f-3c29aefea128
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Date Table'.'Date Table'
+	toColumn: LocalDateTable_68347dda-1535-4608-ba54-447902079a6e.Date
+
+relationship 2c0310fb-dec6-e733-0ec9-6e2d9da404b9
+	crossFilteringBehavior: bothDirections
+	fromColumn: consultas.Fecha
+	toColumn: 'Date Table'.'Date Table'
+

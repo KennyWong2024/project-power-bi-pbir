@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 475.18475118062975,
+            "y": 514
+          },
+          "nodeIndex": "consultas",
+          "nodeLineageTag": "9b26b99b-5c85-43e4-b727-d20be69282f7",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 244
+          },
+          "nodeIndex": "medicos",
+          "nodeLineageTag": "50f5ef1b-58c8-41c2-92ac-00fe3d3f9412",
+          "size": {
+            "height": 204,
+            "width": 220
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 934.36163941535983,
+            "y": 203
+          },
+          "nodeIndex": "pacientes",
+          "nodeLineageTag": "adf5e0e9-e3c2-4023-a6a2-99c94ea5054d",
+          "size": {
+            "height": 290,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 269.36163941535983,
+            "y": 77
+          },
+          "nodeIndex": "Date Table",
+          "nodeLineageTag": "302f1ffd-8374-4907-ad34-5f864b5051a0",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 566.36163941535983,
+            "y": 0
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "9c9e0174-f37f-424c-9c6a-8afa5ea96517",
+          "size": {
+            "height": 227,
+            "width": 335
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

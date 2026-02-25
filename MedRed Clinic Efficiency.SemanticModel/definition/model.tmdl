@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["pacientes","medicos","consultas","Date Table","_Measures"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table pacientes
+ref table DateTableTemplate_5e250fc6-3595-4874-8a3d-05686f31b3ae
+ref table LocalDateTable_3f3a2fbc-c5ab-44ab-92b0-3b678488569b
+ref table medicos
+ref table consultas
+ref table 'Date Table'
+ref table _Measures
+ref table LocalDateTable_68347dda-1535-4608-ba54-447902079a6e
+
+ref cultureInfo en-US
+

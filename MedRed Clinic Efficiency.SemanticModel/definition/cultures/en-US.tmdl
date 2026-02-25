@@ -1,0 +1,3689 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "paciente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "paciente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.paciente_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "PacienteID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "paciente ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PacienteID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "paciente identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "paciente identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "paciente identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "paciente credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "paciente.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.fecha_nacimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "FechaNacimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FechaNacimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_nacimiento.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaNacimiento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_nacimiento.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaNacimiento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha nacimiento yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_nacimiento.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaNacimiento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha nacimiento qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_nacimiento.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaNacimiento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha nacimiento mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_nacimiento.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaNacimiento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.genero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "Genero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "genero": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.ciudad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "Ciudad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ciudad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.tipo_seguro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "TipoSeguro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo seguro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoSeguro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "Edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.grupo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "Grupo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grupo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medico": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medico.medico_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "MedicoID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medico ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "MedicoID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "medico identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "medico identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "medico identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "medico credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "medico.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Medico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medico.especialidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "Especialidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "especialidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medico.hospital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "Hospital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hospital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "infirmary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "hospice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sickbay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sanatorium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "clinic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "medico.tarifa_consulta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "TarifaConsulta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tarifa consulta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TarifaConsulta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "consulta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "consulta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.consulta_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "ConsultaID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "consulta ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ConsultaID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "consulta identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "consulta identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "consulta identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "consulta credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "consulta.paciente_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "PacienteID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "paciente ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PacienteID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "paciente identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "paciente identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "paciente identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "paciente credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.medico_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "MedicoID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "medico ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MedicoID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "medico identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "medico identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "medico identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "medico credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "consulta.diagnostico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "Diagnostico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "diagnostico": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.duracion_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "Duracion_min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duracion min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Duracion_min": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "duracion minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.resultado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "Resultado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resultado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.categoria_duracion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "Categoria Duracion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria duracion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date_table": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date table": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "moment table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "date tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "date bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date slab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date stall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "date_table.date_table": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table",
+			          "ConceptualProperty": "Date Table"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "date tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "date bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date slab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date stall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_table.date_table.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table",
+			          "VariationSource": "Date Table",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hierarchy table": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_table.date_table.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table",
+			          "VariationSource": "Date Table",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date table year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "table year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "date table yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "table yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment table year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "yr table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period table year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "year tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "year bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "year board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "year counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_table.date_table.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table",
+			          "VariationSource": "Date Table",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date table quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "table quarter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "date table qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "table qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "qtr table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "moment table quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period table quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "quarter tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "quarter bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "quarter board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "quarter counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_table.date_table.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table",
+			          "VariationSource": "Date Table",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date table month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "table month": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "date table mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "table mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment table month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "mth table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period table month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "month tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "month bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "month board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "month counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_table.date_table.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date Table",
+			          "VariationSource": "Date Table",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date table day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "table day": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "moment table day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period table day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "day tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "day bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day slab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day stall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.medida_1_ingresos_por_consultas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Medida 1: Ingresos por Consultas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida 1: ingresos por consultas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ingresos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ingresos Totales": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.medida_2_duración_promedio_de_consulta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Medida 2: Duración Promedio de Consulta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida 2: duración promedio de consulta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Duración Promedio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.medida_3__alta_médica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Medida 3: % Alta Médica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida 3: % alta médica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "% Alta Médica": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.medida_4_pacientes_únicos_por_médico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Medida 4: Pacientes Únicos por Médico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida 4: pacientes únicos por médico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Pacientes Únicos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.medida_5_ingreso_por_minuto_de_consulta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Medida 5: Ingreso por Minuto de Consulta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida 5: ingreso por minuto de consulta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.ranking": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Ranking"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.especialidad_top": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Especialidad Top"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "especialidad top": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "especialidad best": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "especialidad first": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "especialidad leading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "especialidad maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "especialidad peak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "especialidad upper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "date_table_date_table_date_hierarchy_has_date_table_date_table_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        },
+			        "date_table.date_table.year": {
+			          "Target": {
+			            "Entity": "date_table.date_table.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_tables_have_year_tables"
+			        }
+			      ]
+			    },
+			    "date_table_date_table_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table": {
+			          "Target": {
+			            "Entity": "date_table.date_table"
+			          }
+			        },
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_date_hierarchy_tables"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_day": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.day": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_days"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_month": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.month": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_months"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.quarter": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_quarters"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_year": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.year": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_years"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimientos_have_fecha_nacimiento_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "consulta_has_date_table": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "date_table": {
+			          "Target": {
+			            "Entity": "date_table"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "date_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_date_tables"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table"
+			            },
+			            "Object": {
+			              "Role": "consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_consultas"
+			        }
+			      ]
+			    },
+			    "consulta_has_medico": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "medico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_consultas"
+			        }
+			      ]
+			    },
+			    "consulta_has_paciente": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "paciente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_pacientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_consultas"
+			        }
+			      ]
+			    },
+			    "medico_has_entity__measure_especialidad_top": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "entity__measure.especialidad_top": {
+			          "Target": {
+			            "Entity": "entity__measure.especialidad_top"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.especialidad_top"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_especialidad_top"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_especialidad_top": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.especialidad_top": {
+			          "Target": {
+			            "Entity": "entity__measure.especialidad_top"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.especialidad_top"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_especialidad_top"
+			        }
+			      ]
+			    },
+			    "medico_has_entity__measure_ranking": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "entity__measure.ranking": {
+			          "Target": {
+			            "Entity": "entity__measure.ranking"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ranking"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_ranking"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_ranking": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.ranking": {
+			          "Target": {
+			            "Entity": "entity__measure.ranking"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ranking"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_ranking"
+			        }
+			      ]
+			    },
+			    "medico_has_entity__measure_medida_5_ingreso_por_minuto_de_consulta": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "entity__measure.medida_5_ingreso_por_minuto_de_consulta": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_5_ingreso_por_minuto_de_consulta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_5_ingreso_por_minuto_de_consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_medida_5_ingreso_por_minuto_de_consulta"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_medida_5_ingreso_por_minuto_de_consulta": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.medida_5_ingreso_por_minuto_de_consulta": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_5_ingreso_por_minuto_de_consulta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_5_ingreso_por_minuto_de_consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medida_5_ingreso_por_minuto_de_consulta"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_medida_4_pacientes_únicos_por_médico": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.medida_4_pacientes_únicos_por_médico": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_4_pacientes_únicos_por_médico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_4_pacientes_únicos_por_médico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medida_4_pacientes_únicos_por_médico"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_medida_3__alta_médica": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.medida_3__alta_médica": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_3__alta_médica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_3__alta_médica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medida_3__alta_médica"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_medida_2_duración_promedio_de_consulta": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.medida_2_duración_promedio_de_consulta": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_2_duración_promedio_de_consulta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_2_duración_promedio_de_consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medida_2_duración_promedio_de_consulta"
+			        }
+			      ]
+			    },
+			    "medico_has_entity__measure_medida_1_ingresos_por_consultas": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "entity__measure.medida_1_ingresos_por_consultas": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_1_ingresos_por_consultas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_1_ingresos_por_consultas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_medida_1_ingresos_por_consultas"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_medida_1_ingresos_por_consultas": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.medida_1_ingresos_por_consultas": {
+			          "Target": {
+			            "Entity": "entity__measure.medida_1_ingresos_por_consultas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.medida_1_ingresos_por_consultas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medida_1_ingresos_por_consultas"
+			        }
+			      ]
+			    },
+			    "date_table_has_date_table": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table": {
+			          "Target": {
+			            "Entity": "date_table"
+			          }
+			        },
+			        "date_table.date_table": {
+			          "Target": {
+			            "Entity": "date_table.date_table"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_date_tables"
+			        }
+			      ]
+			    },
+			    "consulta_has_categoria_duracion": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "consulta.categoria_duracion": {
+			          "Target": {
+			            "Entity": "consulta.categoria_duracion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.categoria_duracion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_categoria_duracions"
+			        }
+			      ]
+			    },
+			    "consulta_has_resultado": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "consulta.resultado": {
+			          "Target": {
+			            "Entity": "consulta.resultado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.resultado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_resultados"
+			        }
+			      ]
+			    },
+			    "consulta_has_duracion_min": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "consulta.duracion_min": {
+			          "Target": {
+			            "Entity": "consulta.duracion_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.duracion_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_duracion_mins"
+			        }
+			      ]
+			    },
+			    "consulta_has_diagnostico": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "consulta.diagnostico": {
+			          "Target": {
+			            "Entity": "consulta.diagnostico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.diagnostico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_diagnosticos"
+			        }
+			      ]
+			    },
+			    "consulta_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "consulta.fecha": {
+			          "Target": {
+			            "Entity": "consulta.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_fechas"
+			        }
+			      ]
+			    },
+			    "consulta_has_consulta_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "consulta.consulta_ID": {
+			          "Target": {
+			            "Entity": "consulta.consulta_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.consulta_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_consulta_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Name": {
+			              "Role": "consulta.consulta_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consulta_ID_are_names_IDs_of_consultas"
+			        }
+			      ]
+			    },
+			    "medico_has_tarifa_consulta": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.tarifa_consulta": {
+			          "Target": {
+			            "Entity": "medico.tarifa_consulta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.tarifa_consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_tarifa_consultas"
+			        }
+			      ]
+			    },
+			    "medico_has_hospital": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.hospital": {
+			          "Target": {
+			            "Entity": "medico.hospital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.hospital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_hospitals"
+			        }
+			      ]
+			    },
+			    "medico_has_especialidad": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.especialidad": {
+			          "Target": {
+			            "Entity": "medico.especialidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.especialidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_especialidads"
+			        }
+			      ]
+			    },
+			    "medico_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.nombre": {
+			          "Target": {
+			            "Entity": "medico.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_nombres"
+			        }
+			      ]
+			    },
+			    "medico_has_medico_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.medico_ID": {
+			          "Target": {
+			            "Entity": "medico.medico_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.medico_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_medico_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Name": {
+			              "Role": "medico.medico_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medico_ID_are_names_IDs_of_medicos"
+			        }
+			      ]
+			    },
+			    "paciente_has_grupo": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.grupo": {
+			          "Target": {
+			            "Entity": "paciente.grupo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.grupo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_grupos"
+			        }
+			      ]
+			    },
+			    "paciente_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.edad": {
+			          "Target": {
+			            "Entity": "paciente.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_edads"
+			        }
+			      ]
+			    },
+			    "paciente_has_tipo_seguro": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.tipo_seguro": {
+			          "Target": {
+			            "Entity": "paciente.tipo_seguro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.tipo_seguro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_tipo_seguros"
+			        }
+			      ]
+			    },
+			    "paciente_has_ciudad": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.ciudad": {
+			          "Target": {
+			            "Entity": "paciente.ciudad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.ciudad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_ciudad"
+			        }
+			      ]
+			    },
+			    "paciente_has_genero": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.genero": {
+			          "Target": {
+			            "Entity": "paciente.genero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.genero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_generos"
+			        }
+			      ]
+			    },
+			    "paciente_has_fecha_nacimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.fecha_nacimiento": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_fecha_nacimientos"
+			        }
+			      ]
+			    },
+			    "paciente_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.nombre": {
+			          "Target": {
+			            "Entity": "paciente.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_nombres"
+			        }
+			      ]
+			    },
+			    "paciente_has_paciente_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.paciente_ID": {
+			          "Target": {
+			            "Entity": "paciente.paciente_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.paciente_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_paciente_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Name": {
+			              "Role": "paciente.paciente_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "paciente_ID_are_names_IDs_of_pacientes"
+			        }
+			      ]
+			    },
+			    "date_table_date_table_date_hierarchy_has_date_table_date_table_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        },
+			        "date_table.date_table.quarter": {
+			          "Target": {
+			            "Entity": "date_table.date_table.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_tables_have_quarter_tables"
+			        }
+			      ]
+			    },
+			    "date_table_date_table_date_hierarchy_has_date_table_date_table_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        },
+			        "date_table.date_table.month": {
+			          "Target": {
+			            "Entity": "date_table.date_table.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_tables_have_month_tables"
+			        }
+			      ]
+			    },
+			    "date_table_date_table_date_hierarchy_has_date_table_date_table_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        },
+			        "date_table.date_table.day": {
+			          "Target": {
+			            "Entity": "date_table.date_table.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_tables_have_day_tables"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

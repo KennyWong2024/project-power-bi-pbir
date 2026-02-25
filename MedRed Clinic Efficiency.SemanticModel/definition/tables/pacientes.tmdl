@@ -1,0 +1,109 @@
+table pacientes
+	lineageTag: adf5e0e9-e3c2-4023-a6a2-99c94ea5054d
+
+	column PacienteID
+		dataType: string
+		lineageTag: 378b143c-8326-41cb-b89e-7766134ad93b
+		summarizeBy: none
+		sourceColumn: PacienteID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: ef73c9f5-057f-4162-8e8f-ed45f1b12dc6
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaNacimiento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 92734338-eefc-40dd-94f1-40f8df2168d3
+		summarizeBy: none
+		sourceColumn: FechaNacimiento
+
+		variation Variation
+			isDefault
+			relationship: 28098108-95cf-4d45-aebc-4d00db13f574
+			defaultHierarchy: LocalDateTable_3f3a2fbc-c5ab-44ab-92b0-3b678488569b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Genero
+		dataType: string
+		lineageTag: c1a5849c-1590-4213-9f54-5280bff8b032
+		summarizeBy: none
+		sourceColumn: Genero
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ciudad
+		dataType: string
+		lineageTag: 373beb3a-a313-4c88-9b84-f074f3cc6486
+		summarizeBy: none
+		sourceColumn: Ciudad
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoSeguro
+		dataType: string
+		lineageTag: 19700961-8155-4b25-b409-6fca1b562e95
+		summarizeBy: none
+		sourceColumn: TipoSeguro
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: string
+		lineageTag: ebbdfa64-6551-4eef-b12f-20a76ea0decd
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo
+		dataType: string
+		lineageTag: 1b5c3359-384a-45c0-9199-e6029aa7d964
+		summarizeBy: none
+		sourceColumn: Grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pacientes = m
+		mode: import
+		source = ```
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\kenny\Documents\Projects\learning-power-bi\data\pacientes.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"PacienteID", type text}, {"Nombre", type text}, {"FechaNacimiento", type date}, {"Genero", type text}, {"Ciudad", type text}, {"TipoSeguro", type text}}),
+				    #"1.#(tab)Nombre en minúsculas: PAC003 'gloria pinto' (Text.Proper" = Table.TransformColumns(#"Changed Type",{{"Nombre", Text.Proper, type text}}),
+				    #"3.#(tab)Género inválido: PAC005 con 'X' — valores válidos son 'F' y 'M' (reemplazar con 'Otro' o null)" = Table.ReplaceValue(#"1.#(tab)Nombre en minúsculas: PAC003 'gloria pinto' (Text.Proper","X","Otro",Replacer.ReplaceText,{"Genero"}),
+				    #"4.#(tab)Fila duplicada: PAC04. (eliminar segunda ocurrencia)" = Table.Distinct(#"3.#(tab)Género inválido: PAC005 con 'X' — valores válidos son 'F' y 'M' (reemplazar con 'Otro' o null)", {"PacienteID"}),
+				    #"5. #(tab)Ciudad vacía: PAC008 (reemplazar con 'Sin Dato')" = Table.ReplaceValue(#"4.#(tab)Fila duplicada: PAC04. (eliminar segunda ocurrencia)","","Sin Dato",Replacer.ReplaceValue,{"Ciudad"}),
+				    #"Calcular Edad Paciente" = Table.AddColumn(#"5. #(tab)Ciudad vacía: PAC008 (reemplazar con 'Sin Dato')", "Custom", each if 
+				[FechaNacimiento] = null 
+				then null 
+				else Date.Year(DateTime.LocalNow()) - Date.Year([FechaNacimiento])),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Calcular Edad Paciente",{{"Custom", "Edad"}}),
+				    #"Rango de Edades" = Table.AddColumn(#"Renamed Columns1", "Grupo", each if [Edad]=null then null 
+				else if [Edad] >= 0 and [Edad] < 18
+				then "0-17"
+				else if [Edad] >= 18 and [Edad] <= 40
+				then "18-40"
+				else if [Edad] > 40 and [Edad] <= 65
+				then "41-65"
+				else if [Edad] > 65 
+				then "65+"
+				else null)
+				in
+				    #"Rango de Edades"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

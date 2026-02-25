@@ -1,0 +1,59 @@
+table _Measures
+	lineageTag: 9c9e0174-f37f-424c-9c6a-8afa5ea96517
+
+	measure 'Medida 1: Ingresos por Consultas' = SUMX(FILTER(Consultas, RELATED(Medicos[TarifaConsulta]) > 0), RELATED(Medicos[TarifaConsulta]))
+		lineageTag: b85504e3-6138-4730-bbf3-9c505b253899
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Medida 2: Duración Promedio de Consulta' = AVERAGEX(ALL(Consultas), Consultas[Duracion_min])
+		lineageTag: bca32347-7f20-4b3c-bfa2-fed4e9f4e291
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Medida 3: % Alta Médica' = DIVIDE(CALCULATE(COUNTROWS(Consultas), Consultas[Resultado] = "Alta"), COUNTROWS(Consultas), 0)
+		lineageTag: 093d0949-204f-444a-9597-ba33712b86bc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Medida 4: Pacientes Únicos por Médico' = DISTINCTCOUNT(Consultas[PacienteID])
+		formatString: 0
+		lineageTag: 4693f876-b87e-43bd-b14e-d65f2f41b548
+
+	measure 'Medida 5: Ingreso por Minuto de Consulta' = DIVIDE([Medida 1: Ingresos por Consultas], SUM(Consultas[Duracion_min]), 0)
+		lineageTag: e35ab137-8ab6-424a-bb31-bb22af12ad0f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Ranking = RANKX(ALL(Medicos), [Medida 1: Ingresos por Consultas])
+		formatString: 0
+		lineageTag: c15f4d87-8f24-4534-bf48-a1884aecc470
+
+	measure 'Especialidad Top' = ```
+			
+			VAR TopEspecialidadTabla = 
+			    TOPN(
+			        1, 
+			        ALLSELECTED('medicos'[Especialidad]), 
+			        [Medida 1: Ingresos por Consultas], 
+			        DESC
+			    )
+			RETURN
+			MAXX(TopEspecialidadTabla, 'medicos'[Especialidad])
+			```
+		lineageTag: 56c0b408-2015-465a-8ac6-a038c98e094f
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
