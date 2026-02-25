@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "835af22432b06cba1730",
   "position": {
     "x": 30,
     "y": 22,
-    "z": 3000,
+    "z": 0,
     "height": 70,
     "width": 404,
-    "tabOrder": 3000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -64,7 +64,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#3B82F6'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "92d8ef5d1ce2652561b2",
   "position": {
     "x": 30.083396512509477,
     "y": 122.27445034116755,
-    "z": 6000,
+    "z": 3000,
     "height": 317.33131159969673,
     "width": 610.40181956027288,
-    "tabOrder": 6000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX",
@@ -285,7 +285,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#3B82F6'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
