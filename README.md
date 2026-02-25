@@ -71,12 +71,12 @@ MedRed/
 │   │   └── relationships.tmdl
 │   └── ...
 │
-├── 📁 data/                               ← Archivos CSV de origen
+├── 📁 data/                               ← Archivos CSV de origen (No cargados en el repo)
 │   ├── pacientes.csv
 │   ├── medicos.csv
 │   └── consultas.csv
 │
-└── 📄 Indicaciones del Proyecto.pdf       ← Diccionario de datos y lineamientos
+└── 📄 Indicaciones del Proyecto.pdf       ← Lineamientos del proyecto
 ```
 
 ---
