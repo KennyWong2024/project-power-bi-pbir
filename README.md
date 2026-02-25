@@ -53,7 +53,7 @@ Visión macro de los KPIs. Identifica rápidamente el % de Alta Médica global, 
 *(Añadir descripción breve cuando la página esté terminada)*
 ![Página 2](images/dashboard_page2.png)
 
-### Página 3: [Nombre de tu página 3] (Acto 3)
+### Página 3: [En proceso] (Acto 3)
 *(Añadir descripción breve cuando la página esté terminada)*
 ![Página 3](images/dashboard_page3.png)
 
