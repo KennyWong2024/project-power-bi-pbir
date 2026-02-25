@@ -12,7 +12,7 @@ Este repositorio contiene un proyecto avanzado de Business Intelligence desarrol
 Dado que este proyecto no usa un `.pbix` tradicional, sigue estos pasos para clonar e "hidratar" el modelo en tu máquina local:
 
 ### 1. Clonar y Abrir
-1. Clona este repositorio en tu máquina local: `git clone <url-del-repo>`
+1. Clona este repositorio en tu máquina local: `git clone git@github.com:KennyWong2024/project-power-bi-pbir.git`
 2. **NO** intentes abrir las carpetas directamente. Haz doble clic en el archivo `MedRed Clinic Efficiency.pbip`. Power BI Desktop se abrirá y cargará la estructura del proyecto.
 3. Es normal que al inicio las gráficas aparezcan en blanco o con advertencias. Esto ocurre porque las rutas locales de los datos no coinciden con las de tu equipo.
 
