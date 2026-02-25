@@ -337,19 +337,6 @@ Profundización en la eficiencia clínica: ¿generan ingresos proporcionales al 
 - [x] Página 1: Resumen Ejecutivo
 - [x] Página 2: Análisis de Eficiencia y Outliers (Box Plot)
 - [ ] Página 3: Resolución y llamadas a la acción
-- [ ] Segmentadores de tiempo sincronizados entre páginas
-- [ ] Tooltips personalizados con mini-gráficos
-- [ ] Publicación en Power BI Service con actualización programada
-
----
-
-## 👥 Contribuidores
-
-| Rol | Responsable |
-|---|---|
-| 🏗️ Arquitectura del modelo y DAX | [@KennyWong2024](https://github.com/KennyWong2024) |
-| 🎨 Diseño UI/UX | *(Colaboradores del equipo)* |
-| 📊 Análisis y narrativa | *(Colaboradores del equipo)* |
 
 ---
 
