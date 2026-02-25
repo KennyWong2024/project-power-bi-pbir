@@ -73,7 +73,7 @@ table consultas
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\kenny\Documents\Projects\learning-power-bi\data\consultas.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents(RutaBase & "consultas.csv"), [Delimiter=","]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ConsultaID", type text}, {"PacienteID", type text}, {"MedicoID", type text}, {"Fecha", type date}, {"Diagnostico", type text}, {"Duracion_min", Int64.Type}, {"Resultado", type text}}),
 				    #"10.#(tab)Diagnóstico vacío: CON005 (reemplazar con 'Sin Diagnóstico Registrado')" = Table.ReplaceValue(#"Changed Type","","Sin Diagnóstico Registrado",Replacer.ReplaceValue,{"Diagnostico"}),

@@ -47,7 +47,7 @@ table medicos
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\kenny\Documents\Projects\learning-power-bi\data\medicos.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents(RutaBase & "medicos.csv"), [Delimiter=","]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"MedicoID", type text}, {"Nombre", type text}, {"Especialidad", type text}, {"Hospital", type text}, {"TarifaConsulta", Int64.Type}}),
 				    #"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')" = Table.ReplaceValue(#"Changed Type","","Sin Asignar",Replacer.ReplaceValue,{"Hospital"}),

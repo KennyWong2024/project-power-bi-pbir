@@ -1,0 +1,7 @@
+expression RutaBase = "C:\Users\kenny\Documents\Projects\learning-power-bi\data\" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: da33fd8b-7510-42a4-b052-c079c7d5509d
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Text
+

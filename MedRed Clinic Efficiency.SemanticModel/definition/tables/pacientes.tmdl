@@ -77,7 +77,7 @@ table pacientes
 		mode: import
 		source = ```
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\kenny\Documents\Projects\learning-power-bi\data\pacientes.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents(RutaBase & "pacientes.csv"), [Delimiter=","]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"PacienteID", type text}, {"Nombre", type text}, {"FechaNacimiento", type date}, {"Genero", type text}, {"Ciudad", type text}, {"TipoSeguro", type text}}),
 				    #"1.#(tab)Nombre en minúsculas: PAC003 'gloria pinto' (Text.Proper" = Table.TransformColumns(#"Changed Type",{{"Nombre", Text.Proper, type text}}),
@@ -105,5 +105,5 @@ table pacientes
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
