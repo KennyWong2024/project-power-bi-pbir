@@ -71,12 +71,12 @@ MedRed/
 │   │   └── relationships.tmdl
 │   └── ...
 │
-├── 📁 data/                               ← Archivos CSV de origen (No cargados en el repo)
+├── 📁 data/                               ← Archivos CSV de origen
 │   ├── pacientes.csv
 │   ├── medicos.csv
 │   └── consultas.csv
 │
-└── 📄 Indicaciones del Proyecto.pdf       ← Lineamientos del proyecto
+└── 📄 Indicaciones del Proyecto.pdf       ← Diccionario de datos y lineamientos
 ```
 
 ---
@@ -137,6 +137,8 @@ git ls-files -v | grep "^S"
 
 El modelo implementa un **Esquema Estrella** que resuelve la relación Muchos a Muchos entre pacientes y médicos mediante una tabla puente de hechos (`consultas`).
 
+![Modelo de Datos](images/data_model.png)
+
 ```
                     ┌─────────────┐
                     │  Date Table  │
@@ -176,6 +178,8 @@ El diseño se alejó de las plantillas corporativas genéricas para construir un
 ### Paleta de Colores: *"Semáforo Moderno"*
 
 Una paleta **semántica y suave** diseñada para evitar la fatiga visual en sesiones largas de análisis:
+
+![Paleta de Colores](images/color_palette.png)
 
 ```
   ████  #10B981 — Verde Esmeralda    →  Alta Médica / Éxito / Positivo
@@ -295,6 +299,8 @@ RETURN
 
 > *"¿Dónde estamos hoy?"*
 
+![Página 1 - Resumen Ejecutivo](images/dashboard_page1.png)
+
 Vista macro del estado de la red. Diseñada para que un director médico pueda leer el estado completo de la red en menos de 30 segundos.
 
 **Visuales incluidos:**
@@ -308,6 +314,8 @@ Vista macro del estado de la red. Diseñada para que un director médico pueda l
 ### Página 2 — Análisis de Eficiencia y Outliers *(Acto 2: El Conflicto)*
 
 > *"¿Dónde están los problemas?"*
+
+![Página 2 - Análisis de Eficiencia](images/dashboard_page2.png)
 
 Profundización en la eficiencia clínica: ¿generan ingresos proporcionales al tiempo que invierten?
 
@@ -325,6 +333,8 @@ Profundización en la eficiencia clínica: ¿generan ingresos proporcionales al 
 ### Página 3 — Resolución y Plan de Acción *(Acto 3: La Solución)* 🚧
 
 > *"¿Qué hacemos ahora?"*
+
+![Página 3 - Resolución](images/dashboard_page3.png)
 
 **En desarrollo.** Esta página cerrará la narrativa transformando los hallazgos en recomendaciones concretas y accionables para la dirección médica.
 
