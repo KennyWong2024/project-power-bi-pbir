@@ -137,8 +137,6 @@ git ls-files -v | grep "^S"
 
 El modelo implementa un **Esquema Estrella** que resuelve la relación Muchos a Muchos entre pacientes y médicos mediante una tabla puente de hechos (`consultas`).
 
-![Modelo de Datos](images/data_model.png)
-
 ```
                     ┌─────────────┐
                     │  Date Table  │
@@ -179,7 +177,7 @@ El diseño se alejó de las plantillas corporativas genéricas para construir un
 
 Una paleta **semántica y suave** diseñada para evitar la fatiga visual en sesiones largas de análisis:
 
-![Paleta de Colores](images/color_palette.png)
+![Paleta de Colores](images/paleta_colores.jpeg)
 
 ```
   ████  #10B981 — Verde Esmeralda    →  Alta Médica / Éxito / Positivo
