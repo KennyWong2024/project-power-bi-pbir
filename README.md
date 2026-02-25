@@ -2,7 +2,6 @@
 **Eficiencia Clínica, Ingresos y Desempeño por Especialidad**
 
 ![Dashboard Portada](images/dashboard_page1.png)
-*(Reemplaza con el nombre real de tu imagen en la carpeta `images`)*
 
 Este repositorio contiene un proyecto avanzado de Business Intelligence desarrollado en **Power BI Desktop**, utilizando el formato de proyecto mejorado (`.pbip` / `.pbir`) para habilitar el control de versiones y el trabajo colaborativo mediante **Git y GitHub**.
 
