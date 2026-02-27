@@ -252,6 +252,47 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6D95D6'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "consultas"
+                          }
+                        },
+                        "Property": "Resultado"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Remisión'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "legend": [
@@ -413,49 +454,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "3f68cfe708c07580d92b",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "286b3eab7bcc34606eac",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "consultas"
-              }
-            },
-            "Property": "Resultado"
-          }
-        },
-        "type": "Categorical",
-        "objects": {
-          "general": [
-            {
-              "properties": {}
-            }
-          ]
-        }
-      },
-      {
-        "name": "ab88a480401032e2d739",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "consultas"
-                  }
-                },
-                "Property": "ConsultaID"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "3f68cfe708c07580d92b"
 }

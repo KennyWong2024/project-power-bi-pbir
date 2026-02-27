@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "92d8ef5d1ce2652561b2",
   "position": {
-    "x": 30.083396512509477,
-    "y": 122.27445034116755,
+    "x": 30.15197568389058,
+    "y": 122.55319148936171,
     "z": 3000,
-    "height": 317.33131159969673,
-    "width": 610.40181956027288,
+    "height": 317.08206686930095,
+    "width": 608.87537993920978,
     "tabOrder": 3000
   },
   "visual": {
@@ -365,7 +365,79 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "6f29e240702835c82e31",
+        "name": "75eb9f380e871407a00d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medicos"
+              }
+            },
+            "Property": "Especialidad"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "medicos",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "Especialidad"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Sin Asignar'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "1df16504a2926e5ea985",
         "field": {
           "Measure": {
             "Expression": {
@@ -379,7 +451,7 @@
         "type": "Advanced"
       },
       {
-        "name": "f14e028b905b785a90b9",
+        "name": "193528d13e348765cd39",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -398,7 +470,7 @@
         "type": "Advanced"
       },
       {
-        "name": "71b0127d280080be0550",
+        "name": "02063f81a46cb0e903ba",
         "field": {
           "Column": {
             "Expression": {
@@ -410,35 +482,6 @@
           }
         },
         "type": "Categorical"
-      },
-      {
-        "name": "75eb9f380e871407a00d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medicos"
-              }
-            },
-            "Property": "Especialidad"
-          }
-        },
-        "type": "TopN",
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
       }
     ]
   }

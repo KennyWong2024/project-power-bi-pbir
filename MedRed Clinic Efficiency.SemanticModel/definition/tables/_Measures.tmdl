@@ -43,6 +43,13 @@ table _Measures
 			```
 		lineageTag: 56c0b408-2015-465a-8ac6-a038c98e094f
 
+	measure 'Total Médicos' = ```
+			DISTINCTCOUNT(medicos[MedicoID])
+			 
+			```
+		formatString: 0
+		lineageTag: 93b54288-6e2a-4276-a28c-3d85884a51a8
+
 	partition _Measures = m
 		mode: import
 		source =

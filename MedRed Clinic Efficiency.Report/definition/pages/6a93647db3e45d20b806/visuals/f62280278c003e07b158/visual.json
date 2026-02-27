@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "f62280278c003e07b158",
   "position": {
     "x": 652.13040181956023,
@@ -364,75 +364,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ab47572f0eb088849c80",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medicos"
-              }
-            },
-            "Property": "Especialidad"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1226d29eda7aaa43c89b",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "medicos"
-                  }
-                },
-                "Property": "Nombre"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ee530f03e9c64cee2b07",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Medida 1: Ingresos por Consultas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1faab94c5d32ac827d45",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "consultas"
-                  }
-                },
-                "Property": "Duracion_min"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
