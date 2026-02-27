@@ -98,11 +98,13 @@ table consultas
 				    #"09" = Table.ReplaceValue(#"Changed Type1","/","-",Replacer.ReplaceText,{"Fecha"}),
 				    #"Categoria Duracion" = Table.AddColumn(#"09", "Categoria Duracion", each if [Duracion_min] <= 30 then "Corta" else if [Duracion_min] <= 60 then "media" else "Larga"),
 				    #"Capitalized Each Word" = Table.TransformColumns(#"Categoria Duracion",{{"Categoria Duracion", Text.Proper, type text}}),
-				    #"Changed Type2" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"Fecha", type date}})
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"Fecha", type date}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type2","","Pendiente",Replacer.ReplaceValue,{"Resultado"}),
+				    #"Filtered Rows" = Table.SelectRows(#"Replaced Value", each [Fecha] >= #date(2024, 1, 1) and [Fecha] <= #date(2024, 12, 31))
 				in
-				    #"Changed Type2"
+				    #"Filtered Rows"
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 

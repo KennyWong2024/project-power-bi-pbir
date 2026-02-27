@@ -359,7 +359,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'El 33% de las consultas finaliza en Alta Médica'"
+                  "Value": "'El 16.55% de las consultas finaliza en Alta Médica'"
                 }
               }
             }
@@ -413,5 +413,49 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "3f68cfe708c07580d92b"
+  "parentGroupName": "3f68cfe708c07580d92b",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "286b3eab7bcc34606eac",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "consultas"
+              }
+            },
+            "Property": "Resultado"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      },
+      {
+        "name": "ab88a480401032e2d739",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "consultas"
+                  }
+                },
+                "Property": "ConsultaID"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

@@ -58,9 +58,10 @@ table pacientes
 		annotation SummarizationSetBy = Automatic
 
 	column Edad
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: ebbdfa64-6551-4eef-b12f-20a76ea0decd
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Edad
 
 		annotation SummarizationSetBy = Automatic
@@ -90,12 +91,20 @@ table pacientes
 		annotation SummarizationSetBy = Automatic
 
 	column FechaRegistro
-		dataType: string
+		dataType: dateTime
+		formatString: Long Date
 		lineageTag: ffe4229e-22ad-4cb3-ad12-9428d26c47f3
 		summarizeBy: none
 		sourceColumn: FechaRegistro
 
+		variation Variation
+			isDefault
+			relationship: 8d62c458-5685-4544-87c9-057626828192
+			defaultHierarchy: LocalDateTable_141d48df-8c09-40ea-bb52-3c6a84339ffe.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	partition pacientes = m
 		mode: import
@@ -122,9 +131,11 @@ table pacientes
 				then "41-65"
 				else if [Edad] > 65 
 				then "65+"
-				else null)
+				else null),
+				    #"Replaced Value" = Table.ReplaceValue(#"Rango de Edades","","Sin Especificar",Replacer.ReplaceValue,{"TipoSeguro"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value",{{"FechaRegistro", type date}, {"Edad", Int64.Type}})
 				in
-				    #"Rango de Edades"
+				    #"Changed Type1"
 				```
 
 	annotation PBI_NavigationStepName = Navigation

@@ -21,3 +21,8 @@ relationship 2c0310fb-dec6-e733-0ec9-6e2d9da404b9
 	fromColumn: consultas.Fecha
 	toColumn: 'Date Table'.'Date Table'
 
+relationship 8d62c458-5685-4544-87c9-057626828192
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pacientes.FechaRegistro
+	toColumn: LocalDateTable_141d48df-8c09-40ea-bb52-3c6a84339ffe.Date
+

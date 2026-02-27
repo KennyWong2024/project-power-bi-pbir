@@ -34,7 +34,7 @@ table medicos
 		annotation SummarizationSetBy = Automatic
 
 	column TarifaConsulta
-		dataType: double
+		dataType: int64
 		lineageTag: a8776197-dc4a-4762-a9f7-d7ac17c469e3
 		summarizeBy: none
 		sourceColumn: TarifaConsulta
@@ -93,9 +93,12 @@ table medicos
 				    #"Changed Type" = Table.TransformColumnTypes(#"Replaced Value",{{"MedicoID", type text}, {"Nombre", type text}, {"Especialidad", type text}, {"Hospital", type text}, {"TarifaConsulta", Int64.Type}}),
 				    #"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')" = Table.ReplaceValue(#"Changed Type","","Sin Asignar",Replacer.ReplaceValue,{"Hospital"}),
 				    #"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')" = Table.TransformColumns(#"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')",{{"Nombre", Text.Proper, type text}}),
-				    #"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)" = Table.ReplaceValue(#"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')",0,250000,Replacer.ReplaceValue,{"TarifaConsulta"})
+				    #"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)" = Table.ReplaceValue(#"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')",0,250000,Replacer.ReplaceValue,{"TarifaConsulta"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)","","Sin Asignar",Replacer.ReplaceValue,{"Especialidad"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1",null,162250,Replacer.ReplaceValue,{"TarifaConsulta"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value2",{{"TarifaConsulta", Int64.Type}})
 				in
-				    #"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)"
+				    #"Changed Type1"
 
 	annotation PBI_NavigationStepName = Navigation
 
