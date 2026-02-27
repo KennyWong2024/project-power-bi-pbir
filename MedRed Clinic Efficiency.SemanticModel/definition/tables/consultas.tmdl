@@ -100,9 +100,11 @@ table consultas
 				    #"Capitalized Each Word" = Table.TransformColumns(#"Categoria Duracion",{{"Categoria Duracion", Text.Proper, type text}}),
 				    #"Changed Type2" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"Fecha", type date}}),
 				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type2","","Pendiente",Replacer.ReplaceValue,{"Resultado"}),
-				    #"Filtered Rows" = Table.SelectRows(#"Replaced Value", each [Fecha] >= #date(2024, 1, 1) and [Fecha] <= #date(2024, 12, 31))
+				    #"Filtered Rows" = Table.SelectRows(#"Replaced Value", each [Fecha] >= #date(2024, 1, 1) and [Fecha] <= #date(2024, 12, 31)),
+				    #"Calculated Absolute Value" = Table.TransformColumns(#"Filtered Rows",{{"Duracion_min", Number.Abs, Int64.Type}}),
+				    #"Filtered Rows1" = Table.SelectRows(#"Calculated Absolute Value", each true)
 				in
-				    #"Filtered Rows"
+				    #"Filtered Rows1"
 
 	annotation PBI_NavigationStepName = Navigation
 
