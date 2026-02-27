@@ -73,6 +73,30 @@ table pacientes
 
 		annotation SummarizationSetBy = Automatic
 
+	column GrupoSanguineo
+		dataType: string
+		lineageTag: 041e07a9-efb8-4705-8cc3-8d6550c9116b
+		summarizeBy: none
+		sourceColumn: GrupoSanguineo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estrato
+		dataType: string
+		lineageTag: 0c1e5226-35da-4717-bba3-5727ad1288d4
+		summarizeBy: none
+		sourceColumn: Estrato
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaRegistro
+		dataType: string
+		lineageTag: ffe4229e-22ad-4cb3-ad12-9428d26c47f3
+		summarizeBy: none
+		sourceColumn: FechaRegistro
+
+		annotation SummarizationSetBy = Automatic
+
 	partition pacientes = m
 		mode: import
 		source = ```

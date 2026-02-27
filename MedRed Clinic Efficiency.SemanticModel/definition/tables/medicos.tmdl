@@ -43,13 +43,54 @@ table medicos
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Genero
+		dataType: string
+		lineageTag: a5765018-d75f-4eb0-ae3c-2a49f387f1ac
+		summarizeBy: none
+		sourceColumn: Genero
+
+		annotation SummarizationSetBy = Automatic
+
+	column AñosExperiencia
+		dataType: string
+		lineageTag: 4c05d5c9-5ef9-44cd-830a-0ae1608a8587
+		summarizeBy: none
+		sourceColumn: AñosExperiencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column RegMedico
+		dataType: string
+		lineageTag: 6df4264d-98df-4b79-9bdf-99932e7a91b9
+		summarizeBy: none
+		sourceColumn: RegMedico
+
+		annotation SummarizationSetBy = Automatic
+
+	column HorarioInicio
+		dataType: string
+		lineageTag: 860a6b95-6cdd-4a20-875b-e8ae49e12549
+		summarizeBy: none
+		sourceColumn: HorarioInicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column HorarioFin
+		dataType: string
+		lineageTag: 7df78313-0aa3-41ed-b049-5d4d828b98ae
+		summarizeBy: none
+		sourceColumn: HorarioFin
+
+		annotation SummarizationSetBy = Automatic
+
 	partition medicos = m
 		mode: import
 		source =
 				let
 				    Source = Csv.Document(File.Contents(RutaBase & "medicos.csv"), [Delimiter=","]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"MedicoID", type text}, {"Nombre", type text}, {"Especialidad", type text}, {"Hospital", type text}, {"TarifaConsulta", Int64.Type}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Promoted Headers","N/A",null,Replacer.ReplaceValue,{"TarifaConsulta"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Replaced Value",{{"MedicoID", type text}, {"Nombre", type text}, {"Especialidad", type text}, {"Hospital", type text}, {"TarifaConsulta", Int64.Type}}),
 				    #"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')" = Table.ReplaceValue(#"Changed Type","","Sin Asignar",Replacer.ReplaceValue,{"Hospital"}),
 				    #"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')" = Table.TransformColumns(#"6.#(tab)Hospital vacío: MED04 (reemplazar con 'Sin Asignar')",{{"Nombre", Text.Proper, type text}}),
 				    #"8.#(tab)TarifaConsulta = 0: MED06 (tarifa inválida — reemplazar con null o investigar)" = Table.ReplaceValue(#"7.#(tab)Nombre en minúsculas: MED05 'dr. Luis Parra' (Text.Proper → 'Dr. Luis Parra')",0,250000,Replacer.ReplaceValue,{"TarifaConsulta"})

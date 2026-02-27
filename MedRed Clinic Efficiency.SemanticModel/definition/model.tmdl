@@ -6,9 +6,14 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
+/// Errors in queries that were loaded on 2/26/2026 7:00:17 PM.
+queryGroup 'Query Errors - 2/26/2026 7:00:17 PM'
+
+	annotation PBI_QueryGroupOrder = 0
+
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["pacientes","medicos","consultas","Date Table","_Measures","RutaBase"]
+annotation PBI_QueryOrder = ["pacientes","medicos","consultas","Date Table","_Measures","RutaBase","Errors in medicos"]
 
 annotation PBI_ProTooling = ["DevMode"]
 

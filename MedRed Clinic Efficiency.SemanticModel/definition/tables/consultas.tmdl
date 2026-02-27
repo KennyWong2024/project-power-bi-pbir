@@ -69,6 +69,22 @@ table consultas
 
 		annotation SummarizationSetBy = Automatic
 
+	column Turno
+		dataType: string
+		lineageTag: 7e8001a5-565e-400e-97b9-7399c15f8a77
+		summarizeBy: none
+		sourceColumn: Turno
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoConsulta
+		dataType: string
+		lineageTag: 7240febb-cc1b-4118-8806-8d2604abf62b
+		summarizeBy: none
+		sourceColumn: TipoConsulta
+
+		annotation SummarizationSetBy = Automatic
+
 	partition consultas = m
 		mode: import
 		source =
@@ -88,5 +104,5 @@ table consultas
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
