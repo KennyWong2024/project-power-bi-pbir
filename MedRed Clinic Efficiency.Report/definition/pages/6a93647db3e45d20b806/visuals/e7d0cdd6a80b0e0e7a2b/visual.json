@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "e7d0cdd6a80b0e0e7a2b",
   "position": {
-    "x": 652,
-    "y": 455,
+    "x": 651.67173252279633,
+    "y": 456.17021276595744,
     "z": 6000,
-    "height": 233,
-    "width": 597,
+    "height": 232.46200607902736,
+    "width": 597.20364741641345,
     "tabOrder": 6000
   },
   "visual": {
@@ -504,7 +504,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F1F5F9'"
+                      "Value": "'#93C5FD'"
                     }
                   }
                 }
@@ -605,7 +605,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Ortopedia'"
+                          "Value": "'Oftalmología'"
                         }
                       }
                     ]
@@ -614,7 +614,47 @@
               }
             }
           ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
         }
+      },
+      {
+        "name": "117bbb4c4aa5701ecd43",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Medida 1: Ingresos por Consultas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6426a60806da69be0314",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "consultas"
+                  }
+                },
+                "Property": "Duracion_min"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

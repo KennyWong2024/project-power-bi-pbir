@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8e03e61c08c6356c4156",
   "position": {
-    "x": 38,
-    "y": 137,
-    "z": 3000,
-    "height": 115,
-    "width": 191,
-    "tabOrder": 3000
+    "x": 37.933130699088146,
+    "y": 137.14285714285714,
+    "z": 1000,
+    "height": 114.77203647416414,
+    "width": 216.89969604863222,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -322,5 +322,28 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "7196a3024c00480070be",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "consultas"
+                  }
+                },
+                "Property": "ConsultaID"
+              }
+            },
+            "Function": 2
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

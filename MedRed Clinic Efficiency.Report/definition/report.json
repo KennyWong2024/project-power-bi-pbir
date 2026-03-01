@@ -72,6 +72,31 @@
           "name": "Custom8979673658709149.json",
           "path": "Custom8979673658709149.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "stethoscope_24dp_F1F5F9_FILL0_36361073079270567.svg",
+          "path": "stethoscope_24dp_F1F5F9_FILL0_36361073079270567.svg",
+          "type": "Image"
+        },
+        {
+          "name": "demography_24dp_F1F5F9_FILL0_w169764668658565.svg",
+          "path": "demography_24dp_F1F5F9_FILL0_w169764668658565.svg",
+          "type": "Image"
+        },
+        {
+          "name": "local_atm_24dp_F1F5F9_FILL0_wg19469862585117814.svg",
+          "path": "local_atm_24dp_F1F5F9_FILL0_wg19469862585117814.svg",
+          "type": "Image"
+        },
+        {
+          "name": "alarm_24dp_F1F5F9_FILL0_wght40962368218516277.svg",
+          "path": "alarm_24dp_F1F5F9_FILL0_wght40962368218516277.svg",
+          "type": "Image"
+        },
+        {
+          "name": "medical_information_24dp_F1F5F3450206181567538.svg",
+          "path": "medical_information_24dp_F1F5F3450206181567538.svg",
+          "type": "Image"
         }
       ]
     }

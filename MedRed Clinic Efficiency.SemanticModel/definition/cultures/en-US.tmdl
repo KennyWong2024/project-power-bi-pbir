@@ -2145,241 +2145,554 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "paciente.grupo_sanguineo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "GrupoSanguineo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grupo sanguineo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "GrupoSanguineo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.estrato": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "Estrato"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estrato": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "paciente.fecha_registro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "ConceptualProperty": "FechaRegistro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha registro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FechaRegistro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_registro.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaRegistro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha registro date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_registro.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaRegistro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha registro year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha registro yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_registro.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaRegistro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha registro quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha registro qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_registro.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaRegistro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha registro month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha registro mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "paciente.fecha_registro.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pacientes",
+			          "VariationSource": "FechaRegistro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha registro day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "medico.genero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "Genero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "genero": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medico.años_experiencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "AñosExperiencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "años experiencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "año experiencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "AñosExperiencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medico.reg_medico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "RegMedico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "reg medico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RegMedico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medico.horario_inicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "HorarioInicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horario inicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HorarioInicio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medico.horario_fin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "HorarioFin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horario fin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HorarioFin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "horario appendage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "horario limb": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "horario organ": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "horario member": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "horario flipper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "horario paddle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "horario projection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "horario propeller": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "horario rudder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "horario stabilizer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.turno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "Turno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "consulta.tipo_consulta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "consultas",
+			          "ConceptualProperty": "TipoConsulta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo consulta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoConsulta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.total_médicos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Total Médicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total médicos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate médico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall médico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "date_table_date_table_date_hierarchy_has_date_table_date_table_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Date Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table.date_table.date_hierarchy": {
-			          "Target": {
-			            "Entity": "date_table.date_table.date_hierarchy"
-			          }
-			        },
-			        "date_table.date_table.year": {
-			          "Target": {
-			            "Entity": "date_table.date_table.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table.date_table.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "date_table.date_table.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_tables_have_year_tables"
-			        }
-			      ]
-			    },
-			    "date_table_date_table_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Date Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date_table.date_table": {
-			          "Target": {
-			            "Entity": "date_table.date_table"
-			          }
-			        },
-			        "date_table.date_table.date_hierarchy": {
-			          "Target": {
-			            "Entity": "date_table.date_table.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table.date_table"
-			            },
-			            "Object": {
-			              "Role": "date_table.date_table.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_date_hierarchy_tables"
-			        }
-			      ]
-			    },
-			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_day": {
-			      "Binding": {
-			        "ConceptualEntity": "pacientes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "paciente.fecha_nacimiento.date_hierarchy": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
-			          }
-			        },
-			        "paciente.fecha_nacimiento.day": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "paciente.fecha_nacimiento.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_days"
-			        }
-			      ]
-			    },
-			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_month": {
-			      "Binding": {
-			        "ConceptualEntity": "pacientes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "paciente.fecha_nacimiento.date_hierarchy": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
-			          }
-			        },
-			        "paciente.fecha_nacimiento.month": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "paciente.fecha_nacimiento.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_months"
-			        }
-			      ]
-			    },
-			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "pacientes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "paciente.fecha_nacimiento.date_hierarchy": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
-			          }
-			        },
-			        "paciente.fecha_nacimiento.quarter": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "paciente.fecha_nacimiento.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_quarters"
-			        }
-			      ]
-			    },
-			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_year": {
-			      "Binding": {
-			        "ConceptualEntity": "pacientes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "paciente.fecha_nacimiento.date_hierarchy": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
-			          }
-			        },
-			        "paciente.fecha_nacimiento.year": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "paciente.fecha_nacimiento.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_years"
-			        }
-			      ]
-			    },
-			    "paciente_fecha_nacimiento_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "pacientes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "paciente.fecha_nacimiento": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento"
-			          }
-			        },
-			        "paciente.fecha_nacimiento.date_hierarchy": {
-			          "Target": {
-			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "paciente.fecha_nacimiento"
-			            },
-			            "Object": {
-			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_nacimientos_have_fecha_nacimiento_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "consulta_has_date_table": {
+			    "consulta_has_tipo_consulta": {
 			      "Binding": {
 			        "ConceptualEntity": "consultas"
 			      },
@@ -2390,9 +2703,9 @@ cultureInfo en-US
 			            "Entity": "consulta"
 			          }
 			        },
-			        "date_table": {
+			        "consulta.tipo_consulta": {
 			          "Target": {
-			            "Entity": "date_table"
+			            "Entity": "consulta.tipo_consulta"
 			          }
 			        }
 			      },
@@ -2403,29 +2716,16 @@ cultureInfo en-US
 			              "Role": "consulta"
 			            },
 			            "Object": {
-			              "Role": "date_table"
+			              "Role": "consulta.tipo_consulta"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "consultas_have_date_tables"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date_table"
-			            },
-			            "Object": {
-			              "Role": "consulta"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_tables_have_consultas"
+			          "ID": "consultas_have_tipo_consultas"
 			        }
 			      ]
 			    },
-			    "consulta_has_medico": {
+			    "consulta_has_turno": {
 			      "Binding": {
 			        "ConceptualEntity": "consultas"
 			      },
@@ -2436,84 +2736,289 @@ cultureInfo en-US
 			            "Entity": "consulta"
 			          }
 			        },
+			        "consulta.turno": {
+			          "Target": {
+			            "Entity": "consulta.turno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "consulta.turno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_turnos"
+			        }
+			      ]
+			    },
+			    "medico_has_horario_fin": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
 			        "medico": {
 			          "Target": {
 			            "Entity": "medico"
 			          }
+			        },
+			        "medico.horario_fin": {
+			          "Target": {
+			            "Entity": "medico.horario_fin"
+			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "consulta"
+			              "Role": "medico"
 			            },
 			            "Object": {
-			              "Role": "medico"
+			              "Role": "medico.horario_fin"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "consultas_have_medicos"
+			          "ID": "medicos_have_horario_fins"
+			        }
+			      ]
+			    },
+			    "medico_has_horario_inicio": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
 			        },
+			        "medico.horario_inicio": {
+			          "Target": {
+			            "Entity": "medico.horario_inicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "medico"
 			            },
 			            "Object": {
-			              "Role": "consulta"
+			              "Role": "medico.horario_inicio"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "medicos_have_consultas"
+			          "ID": "medicos_have_horario_inicios"
 			        }
 			      ]
 			    },
-			    "consulta_has_paciente": {
+			    "medico_has_reg_medico": {
 			      "Binding": {
-			        "ConceptualEntity": "consultas"
+			        "ConceptualEntity": "medicos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "consulta": {
+			        "medico": {
 			          "Target": {
-			            "Entity": "consulta"
+			            "Entity": "medico"
 			          }
 			        },
+			        "medico.reg_medico": {
+			          "Target": {
+			            "Entity": "medico.reg_medico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.reg_medico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_reg_medicos"
+			        }
+			      ]
+			    },
+			    "medico_has_años_experiencia": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.años_experiencia": {
+			          "Target": {
+			            "Entity": "medico.años_experiencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.años_experiencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_años_experiencias"
+			        }
+			      ]
+			    },
+			    "medico_has_genero": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.genero": {
+			          "Target": {
+			            "Entity": "medico.genero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.genero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_generos"
+			        }
+			      ]
+			    },
+			    "paciente_has_fecha_registro": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
 			        "paciente": {
 			          "Target": {
 			            "Entity": "paciente"
 			          }
+			        },
+			        "paciente.fecha_registro": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro"
+			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "consulta"
+			              "Role": "paciente"
 			            },
 			            "Object": {
-			              "Role": "paciente"
+			              "Role": "paciente.fecha_registro"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "consultas_have_pacientes"
+			          "ID": "pacientes_have_fecha_registros"
+			        }
+			      ]
+			    },
+			    "paciente_has_estrato": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
 			        },
+			        "paciente.estrato": {
+			          "Target": {
+			            "Entity": "paciente.estrato"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "paciente"
 			            },
 			            "Object": {
-			              "Role": "consulta"
+			              "Role": "paciente.estrato"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "pacientes_have_consultas"
+			          "ID": "pacientes_have_estratos"
+			        }
+			      ]
+			    },
+			    "paciente_has_grupo_sanguineo": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        },
+			        "paciente.grupo_sanguineo": {
+			          "Target": {
+			            "Entity": "paciente.grupo_sanguineo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "paciente.grupo_sanguineo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_grupo_sanguineos"
 			        }
 			      ]
 			    },
@@ -3579,6 +4084,408 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "medico_has_entity__measure_total_médicos": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "entity__measure.total_médicos": {
+			          "Target": {
+			            "Entity": "entity__measure.total_médicos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.total_médicos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_total_médicos"
+			        }
+			      ]
+			    },
+			    "consulta_has_paciente": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "paciente": {
+			          "Target": {
+			            "Entity": "paciente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "paciente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_pacientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente"
+			            },
+			            "Object": {
+			              "Role": "consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pacientes_have_consultas"
+			        }
+			      ]
+			    },
+			    "consulta_has_medico": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "medico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_medicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_consultas"
+			        }
+			      ]
+			    },
+			    "consulta_has_date_table": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "date_table": {
+			          "Target": {
+			            "Entity": "date_table"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "date_table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_date_tables"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table"
+			            },
+			            "Object": {
+			              "Role": "consulta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_consultas"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimientos_have_fecha_nacimiento_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_year": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.year": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_years"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.quarter": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_quarters"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_month": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.month": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_months"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_nacimiento_date_hierarchy_has_paciente_fecha_nacimiento_day": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_nacimiento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_nacimiento.day": {
+			          "Target": {
+			            "Entity": "paciente.fecha_nacimiento.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_nacimiento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_nacimiento.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_nacimiento_date_hierarchies_have_fecha_nacimiento_days"
+			        }
+			      ]
+			    },
+			    "date_table_date_table_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table": {
+			          "Target": {
+			            "Entity": "date_table.date_table"
+			          }
+			        },
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_tables_have_date_hierarchy_tables"
+			        }
+			      ]
+			    },
+			    "date_table_date_table_date_hierarchy_has_date_table_date_table_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_table.date_table.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date_table.date_table.date_hierarchy"
+			          }
+			        },
+			        "date_table.date_table.year": {
+			          "Target": {
+			            "Entity": "date_table.date_table.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date_table.date_table.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date_table.date_table.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_tables_have_year_tables"
+			        }
+			      ]
+			    },
 			    "date_table_date_table_date_hierarchy_has_date_table_date_table_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Date Table"
@@ -3675,6 +4582,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_hierarchy_tables_have_day_tables"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_registro_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_registro": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro"
+			          }
+			        },
+			        "paciente.fecha_registro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_registro"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_registro.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_registros_have_fecha_registro_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_registro_date_hierarchy_has_paciente_fecha_registro_year": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_registro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_registro.year": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_registro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_registro.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_registro_date_hierarchies_have_fecha_registro_years"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_registro_date_hierarchy_has_paciente_fecha_registro_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_registro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_registro.quarter": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_registro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_registro.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_registro_date_hierarchies_have_fecha_registro_quarters"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_registro_date_hierarchy_has_paciente_fecha_registro_month": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_registro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_registro.month": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_registro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_registro.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_registro_date_hierarchies_have_fecha_registro_months"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_registro_date_hierarchy_has_paciente_fecha_registro_day": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_registro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_registro.day": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_registro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_registro.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_registro_date_hierarchies_have_fecha_registro_days"
 			        }
 			      ]
 			    }

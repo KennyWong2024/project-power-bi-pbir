@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "a476d4bcac060a746077",
   "position": {
-    "x": 269,
-    "y": 137,
-    "z": 4000,
-    "height": 115,
-    "width": 193,
-    "tabOrder": 4000
+    "x": 267.47720364741645,
+    "y": 137.14285714285714,
+    "z": 2000,
+    "height": 114.77203647416414,
+    "width": 248.0243161094225,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -264,5 +264,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b4fd291762e46447bb8e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Medida 1: Ingresos por Consultas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

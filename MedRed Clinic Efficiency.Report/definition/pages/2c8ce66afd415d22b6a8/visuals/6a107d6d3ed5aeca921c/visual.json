@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "6a107d6d3ed5aeca921c",
   "position": {
-    "x": 496,
-    "y": 137,
-    "z": 5000,
-    "height": 115,
-    "width": 193,
-    "tabOrder": 5000
+    "x": 533.98176291793311,
+    "y": 137.14285714285714,
+    "z": 3000,
+    "height": 114.77203647416414,
+    "width": 212.03647416413375,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -260,6 +260,20 @@
         },
         "type": "Advanced",
         "howCreated": "User"
+      },
+      {
+        "name": "ca48305e30ea99a3eacd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Medida 3: % Alta Médica"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

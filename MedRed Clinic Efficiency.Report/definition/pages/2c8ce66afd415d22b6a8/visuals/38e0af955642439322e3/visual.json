@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "38e0af955642439322e3",
   "position": {
-    "x": 728,
-    "y": 137,
-    "z": 6000,
-    "height": 115,
-    "width": 207,
-    "tabOrder": 6000
+    "x": 0,
+    "y": 0,
+    "z": 4000,
+    "height": 114.77203647416414,
+    "width": 207.17325227963528,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -226,5 +226,24 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "0ee08decd1a93646bbee",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "7ccf38b7101e76062770",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Medida 2: Duración Promedio de Consulta"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

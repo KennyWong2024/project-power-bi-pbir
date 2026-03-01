@@ -4,10 +4,10 @@
   "position": {
     "x": 496.45885286783039,
     "y": 500.04987531172065,
-    "z": 8000,
+    "z": 6000,
     "height": 191.22194513715709,
     "width": 742.44389027431419,
-    "tabOrder": 8000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "tableEx",
@@ -488,7 +488,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dr. Antonio Vera lidera en  Ranking por Ingresos'"
+                  "Value": "'Dra. Fabiola Molina lidera con 21.5M y Dra. Valentina Lopez con ingresos similares con 20.9M'"
                 }
               }
             },

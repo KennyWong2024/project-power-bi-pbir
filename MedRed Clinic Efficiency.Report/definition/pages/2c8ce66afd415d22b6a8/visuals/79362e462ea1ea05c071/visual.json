@@ -4,10 +4,10 @@
   "position": {
     "x": 496.45885286783039,
     "y": 274.713216957606,
-    "z": 9000,
+    "z": 7000,
     "height": 213.66583541147131,
     "width": 742.44389027431419,
-    "tabOrder": 9000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -388,7 +388,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Clínica del Norte lidera en Altas y Hospital San José con 50 % de Tratamientos'"
+                  "Value": "'Hospital Universitario lidera en Altas y Clinica del Pais con un indice de Tratamientos superior al promedio'"
                 }
               }
             },

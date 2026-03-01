@@ -94,56 +94,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cd3c3fccb06a70a1d9aa",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medicos"
-              }
-            },
-            "Property": "Especialidad"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "45a0cf5b63ce76e43802",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Total Médicos"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "75de170c573047d512a7",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "consultas"
-                  }
-                },
-                "Property": "Duracion_min"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

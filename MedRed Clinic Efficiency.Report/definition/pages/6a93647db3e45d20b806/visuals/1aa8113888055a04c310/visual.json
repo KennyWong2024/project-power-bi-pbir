@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "1aa8113888055a04c310",
   "position": {
-    "x": 29,
-    "y": 455,
+    "x": 29.179331306990882,
+    "y": 455.19756838905778,
     "z": 5000,
-    "height": 233,
-    "width": 610,
+    "height": 232.46200607902736,
+    "width": 609.84802431610944,
     "tabOrder": 5000
   },
   "visual": {
@@ -401,7 +401,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F1F5F9'"
+                      "Value": "'#93C5FD'"
                     }
                   }
                 }
@@ -502,7 +502,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Cardiología'"
+                          "Value": "'Urología'"
                         }
                       }
                     ]
@@ -512,6 +512,39 @@
             }
           ]
         }
+      },
+      {
+        "name": "da9702749ed26a5d8bd8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Medida 1: Ingresos por Consultas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c25df8cfb582a438ac89",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "consultas"
+                  }
+                },
+                "Property": "Duracion_min"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
