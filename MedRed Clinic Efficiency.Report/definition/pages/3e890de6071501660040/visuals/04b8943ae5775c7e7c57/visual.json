@@ -1,37 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "545ff095ca472717a197",
+  "name": "04b8943ae5775c7e7c57",
   "position": {
-    "x": 30.15197568389058,
-    "y": 121.58054711246201,
-    "z": 7000,
-    "height": 317.08206686930095,
-    "width": 608.87537993920978,
-    "tabOrder": 7000
+    "x": 106.04184100418411,
+    "y": 404.88702928870293,
+    "z": 1000,
+    "height": 293.489539748954,
+    "width": 1070.0585774058577,
+    "tabOrder": 1000
   },
   "visual": {
-    "visualType": "BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX",
+    "visualType": "lineClusteredColumnComboChart",
     "query": {
       "queryState": {
-        "category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "consultas"
-                    }
-                  },
-                  "Property": "ConsultaID"
-                }
-              },
-              "queryRef": "consultas.ConsultaID",
-              "nativeQueryRef": "ConsultaID"
-            }
-          ]
-        },
-        "categoryGroup": {
+        "Category": {
           "projections": [
             {
               "field": {
@@ -50,165 +32,69 @@
             }
           ]
         },
-        "measure": {
+        "Y": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "consultas"
-                        }
-                      },
-                      "Property": "Duracion_min"
+                    "SourceRef": {
+                      "Entity": "_Measures"
                     }
                   },
-                  "Function": 1
+                  "Property": "Medida 1: Ingresos por Consultas"
                 }
               },
-              "queryRef": "Sum(consultas.Duracion_min)",
-              "nativeQueryRef": "Average of Duracion_min",
-              "displayName": "Duracion Total"
+              "queryRef": "_Measures.Medida 1: Ingresos por Consultas",
+              "nativeQueryRef": "Ingresos Totales",
+              "displayName": "Ingresos Totales"
             }
           ]
         },
-        "tooltipData": {
+        "Y2": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "medicos"
-                        }
-                      },
-                      "Property": "Hospital"
+                    "SourceRef": {
+                      "Entity": "_Measures"
                     }
                   },
-                  "Function": 5
+                  "Property": "Medida 4: Pacientes Únicos por Médico"
                 }
               },
-              "queryRef": "CountNonNull(medicos.Hospital)",
-              "nativeQueryRef": "Count of Hospital"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "medicos"
-                        }
-                      },
-                      "Property": "Nombre"
-                    }
-                  },
-                  "Function": 5
-                }
-              },
-              "queryRef": "CountNonNull(medicos.Nombre)",
-              "nativeQueryRef": "Count of Nombre"
+              "queryRef": "_Measures.Medida 4: Pacientes Únicos por Médico",
+              "nativeQueryRef": "Pacientes Únicos ",
+              "displayName": "Pacientes Únicos "
             }
           ]
         }
       },
       "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Medida 1: Ingresos por Consultas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "xAxis": [
+      "categoryAxis": [
         {
           "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            },
-            "titleColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "RangeSelector": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "border": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "gridLines": [
-        {
-          "properties": {
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            },
-            "categoryColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "tickMarks": [
-        {
-          "properties": {
-            "color": {
+            "labelColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -219,12 +105,12 @@
                 }
               }
             },
-            "categoryTickColor": {
+            "titleColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#ffffff'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
@@ -233,32 +119,15 @@
           }
         }
       ],
-      "parentAxis": [
+      "valueAxis": [
         {
           "properties": {
-            "fontColor": {
+            "labelColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "yAxis": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
@@ -269,7 +138,29 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#ffffff'"
+                      "Value": "'#F1F5F9'"
+                    }
+                  }
+                }
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F1F5F9'"
+                    }
+                  }
+                }
+              }
+            },
+            "secTitleColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
@@ -278,21 +169,27 @@
           }
         }
       ],
-      "boxOptions": [
+      "legend": [
         {
           "properties": {
-            "boxUpperColor": {
+            "labelColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#EF4444'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
               }
-            },
-            "boxLowerColor": {
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
               "solid": {
                 "color": {
                   "expr": {
@@ -302,22 +199,66 @@
                   }
                 }
               }
-            },
-            "whiskerColor": {
+            }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#118DFF'"
+                      "Value": "'#EF4444'"
                     }
                   }
                 }
               }
-            },
-            "median": {
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Medida 4: Pacientes Únicos por Médico"
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "strokeWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "'Inclusive'"
+                  "Value": "4D"
+                }
+              }
+            },
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "markers": [
+        {
+          "properties": {
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "borderColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F1F5F9'"
+                    }
+                  }
                 }
               }
             }
@@ -380,7 +321,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Estandarización de Duracion por Especialidad (Neurologia es consistente pero Medicina Interna tiene dispersion)'"
+                  "Value": "'Investigar rentabilidad de Especialidades con Ingresos mas bajos '"
                 }
               }
             },
@@ -389,7 +330,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#ffffff'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
@@ -404,7 +345,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1a0ccf0590e73636b840",
+        "name": "ade4c18d73d59b31c2a5",
         "field": {
           "Column": {
             "Expression": {
@@ -432,8 +373,8 @@
                         "Type": 0
                       },
                       {
-                        "Name": "c",
-                        "Entity": "consultas",
+                        "Name": "_",
+                        "Entity": "_Measures",
                         "Type": 0
                       }
                     ],
@@ -452,20 +393,15 @@
                     ],
                     "OrderBy": [
                       {
-                        "Direction": 2,
+                        "Direction": 1,
                         "Expression": {
-                          "Aggregation": {
+                          "Measure": {
                             "Expression": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "c"
-                                  }
-                                },
-                                "Property": "ConsultaID"
+                              "SourceRef": {
+                                "Source": "_"
                               }
                             },
-                            "Function": 5
+                            "Property": "Medida 1: Ingresos por Consultas"
                           }
                         }
                       }
@@ -510,72 +446,29 @@
         }
       },
       {
-        "name": "73c630e0880b1e00d056",
+        "name": "edeeeeb635d13bd5005d",
         "field": {
-          "Column": {
+          "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "consultas"
+                "Entity": "_Measures"
               }
             },
-            "Property": "ConsultaID"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d4e09ddfc4a3bca0b29c",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "consultas"
-                  }
-                },
-                "Property": "Duracion_min"
-              }
-            },
-            "Function": 1
+            "Property": "Medida 1: Ingresos por Consultas"
           }
         },
         "type": "Advanced"
       },
       {
-        "name": "3be117c7deaca610cca3",
+        "name": "115dafe1b0ad6427c735",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "medicos"
-                  }
-                },
-                "Property": "Nombre"
+              "SourceRef": {
+                "Entity": "_Measures"
               }
             },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b7d5be880e8b37702425",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "medicos"
-                  }
-                },
-                "Property": "Hospital"
-              }
-            },
-            "Function": 5
+            "Property": "Medida 4: Pacientes Únicos por Médico"
           }
         },
         "type": "Advanced"

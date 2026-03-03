@@ -264,23 +264,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b4fd291762e46447bb8e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Medida 1: Ingresos por Consultas"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 29.179331306990882,
     "y": 455.19756838905778,
-    "z": 5000,
+    "z": 4000,
     "height": 232.46200607902736,
     "width": 609.84802431610944,
-    "tabOrder": 5000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -512,39 +512,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "da9702749ed26a5d8bd8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Medida 1: Ingresos por Consultas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c25df8cfb582a438ac89",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "consultas"
-                  }
-                },
-                "Property": "Duracion_min"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

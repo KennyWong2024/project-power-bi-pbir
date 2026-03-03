@@ -260,20 +260,6 @@
         },
         "type": "Advanced",
         "howCreated": "User"
-      },
-      {
-        "name": "ca48305e30ea99a3eacd",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Medida 3: % Alta Médica"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
