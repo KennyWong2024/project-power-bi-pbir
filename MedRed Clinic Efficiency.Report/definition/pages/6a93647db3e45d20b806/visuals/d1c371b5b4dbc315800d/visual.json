@@ -189,6 +189,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Especialidad",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   }
 }
