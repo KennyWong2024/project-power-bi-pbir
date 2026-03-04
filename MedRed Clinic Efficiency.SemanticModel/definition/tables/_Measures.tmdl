@@ -12,9 +12,8 @@ table _Measures
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Medida 3: % Alta Médica' = DIVIDE(CALCULATE(COUNTROWS(Consultas), Consultas[Resultado] = "Alta"), COUNTROWS(Consultas), 0)
+		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 093d0949-204f-444a-9597-ba33712b86bc
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Medida 4: Pacientes Únicos por Médico' = DISTINCTCOUNT(Consultas[PacienteID])
 		formatString: 0
@@ -49,6 +48,13 @@ table _Measures
 			```
 		formatString: 0
 		lineageTag: 93b54288-6e2a-4276-a28c-3d85884a51a8
+
+	measure 'Ingresos totales por paciente' = ```
+			COUNT(consultas[PacienteID])
+			 
+			```
+		formatString: 0
+		lineageTag: 98d27570-6082-4d90-bcde-4698611cf8a3
 
 	partition _Measures = m
 		mode: import

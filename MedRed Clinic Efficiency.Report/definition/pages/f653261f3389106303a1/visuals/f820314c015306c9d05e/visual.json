@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "b5858510a56ca67088b3",
+  "name": "f820314c015306c9d05e",
   "position": {
-    "x": 1192.219451371571,
-    "y": 8.0798004987531176,
-    "z": 3000,
-    "height": 63.740648379052367,
-    "width": 64.638403990024941,
-    "tabOrder": 3000
+    "x": 1234.4139650872817,
+    "y": 0,
+    "z": 8000,
+    "height": 40.399002493765586,
+    "width": 45.785536159600994,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "actionButton",
@@ -18,7 +18,7 @@
             "shapeType": {
               "expr": {
                 "Literal": {
-                  "Value": "'back'"
+                  "Value": "'bookmarks'"
                 }
               }
             },
@@ -27,7 +27,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#f1f5f9'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
@@ -61,38 +61,7 @@
             "navigationSection": {
               "expr": {
                 "Literal": {
-                  "Value": "'2c8ce66afd415d22b6a8'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "border": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#93C5FD'"
-                    }
-                  }
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
+                  "Value": "'3e890de6071501660040'"
                 }
               }
             }

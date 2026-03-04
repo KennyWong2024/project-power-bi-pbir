@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "04b8943ae5775c7e7c57",
+  "name": "70dab1c51c7c876cb227",
   "position": {
-    "x": 640,
-    "y": 148.96551724137933,
-    "z": 1000,
-    "height": 320,
-    "width": 629.88505747126442,
-    "tabOrder": 1000
+    "x": 13.594771241830065,
+    "y": 312.67973856209147,
+    "z": 10001,
+    "height": 400.52287581699346,
+    "width": 405.75163398692808,
+    "tabOrder": 10001
   },
   "visual": {
-    "visualType": "lineClusteredColumnComboChart",
+    "visualType": "funnel",
     "query": {
       "queryState": {
         "Category": {
@@ -32,24 +32,6 @@
             }
           ]
         },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "Total Médicos"
-                }
-              },
-              "queryRef": "_Measures.Total Médicos",
-              "nativeQueryRef": "Total Médicos"
-            }
-          ]
-        },
         "Y": {
           "projections": [
             {
@@ -60,31 +42,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Medida 1: Ingresos por Consultas"
+                  "Property": "Medida 3: % Alta Médica"
                 }
               },
-              "queryRef": "_Measures.Medida 1: Ingresos por Consultas",
-              "nativeQueryRef": "Ingresos Totales",
-              "displayName": "Ingresos Totales"
-            }
-          ]
-        },
-        "Y2": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "Medida 4: Pacientes Únicos por Médico"
-                }
-              },
-              "queryRef": "_Measures.Medida 4: Pacientes Únicos por Médico",
-              "nativeQueryRef": "Pacientes Únicos ",
-              "displayName": "Pacientes Únicos "
+              "queryRef": "_Measures.Medida 3: % Alta Médica",
+              "nativeQueryRef": "Medida 3: % Alta Médica"
             }
           ]
         }
@@ -99,7 +61,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Medida 1: Ingresos por Consultas"
+                "Property": "Medida 3: % Alta Médica"
               }
             },
             "direction": "Descending"
@@ -109,101 +71,6 @@
       }
     },
     "objects": {
-      "categoryAxis": [
-        {
-          "properties": {
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            },
-            "titleColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            },
-            "titleColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            },
-            "gridlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            },
-            "secTitleColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
       "dataPoint": [
         {
           "properties": {
@@ -211,24 +78,26 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#10B981'"
                     }
                   }
                 }
               }
             }
           }
-        },
+        }
+      ],
+      "labels": [
         {
           "properties": {
-            "fill": {
+            "color": {
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#EF4444'"
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
                 }
@@ -236,48 +105,53 @@
             }
           },
           "selector": {
-            "metadata": "_Measures.Medida 4: Pacientes Únicos por Médico"
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ]
           }
         }
       ],
-      "lineStyles": [
+      "categoryAxis": [
         {
           "properties": {
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "4D"
-                }
-              }
-            },
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
           }
         }
       ],
-      "markers": [
+      "percentBarLabel": [
         {
           "properties": {
-            "borderShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "borderColor": {
+            "color": {
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -340,7 +214,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Investigar Rentabilidad de Especialidades con Ingresos Bajos '"
+                  "Value": "'Top 5 Especialidades por % de Alta'"
                 }
               }
             },
@@ -348,8 +222,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#F1F5F9'"
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
                 }
@@ -364,7 +239,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "ade4c18d73d59b31c2a5",
+        "name": "9f964eee061097d00c16",
         "field": {
           "Column": {
             "Expression": {
@@ -392,8 +267,8 @@
                         "Type": 0
                       },
                       {
-                        "Name": "_",
-                        "Entity": "_Measures",
+                        "Name": "c",
+                        "Entity": "consultas",
                         "Type": 0
                       }
                     ],
@@ -412,20 +287,25 @@
                     ],
                     "OrderBy": [
                       {
-                        "Direction": 1,
+                        "Direction": 2,
                         "Expression": {
-                          "Measure": {
+                          "Aggregation": {
                             "Expression": {
-                              "SourceRef": {
-                                "Source": "_"
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "ConsultaID"
                               }
                             },
-                            "Property": "Medida 1: Ingresos por Consultas"
+                            "Function": 5
                           }
                         }
                       }
                     ],
-                    "Top": 6
+                    "Top": 5
                   }
                 }
               },
@@ -463,6 +343,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "07448be27300a10e8108",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Medida 3: % Alta Médica"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

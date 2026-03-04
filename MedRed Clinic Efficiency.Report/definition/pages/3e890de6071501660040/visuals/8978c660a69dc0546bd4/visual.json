@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8978c660a69dc0546bd4",
   "position": {
-    "x": 14.364089775561096,
-    "y": 83.491271820448873,
+    "x": 14.712643678160921,
+    "y": 148.96551724137933,
     "z": 0,
-    "height": 320.49875311720695,
-    "width": 1251.4713216957605,
+    "height": 320,
+    "width": 605.97701149425291,
     "tabOrder": 0
   },
   "visual": {
@@ -420,53 +420,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "3e5fc6f929529bde9c08",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Total Médicos"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ae4b4a8f7d9c553d3908",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "consultas"
-                  }
-                },
-                "Property": "Duracion_min"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "669a90da09c4c0db530a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Medida 1: Ingresos por Consultas"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

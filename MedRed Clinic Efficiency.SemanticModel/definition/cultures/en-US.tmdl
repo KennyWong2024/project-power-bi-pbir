@@ -1903,16 +1903,6 @@ cultureInfo en-US
 			          "medida 2: duración promedio de consulta": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Duración Promedio": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1932,6 +1922,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "% Alta Médica": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Alta Médica": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2699,42 +2699,41 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "paciente_fecha_registro_date_hierarchy_has_paciente_fecha_registro_year": {
-			      "Binding": {
-			        "ConceptualEntity": "pacientes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "paciente.fecha_registro.date_hierarchy": {
-			          "Target": {
-			            "Entity": "paciente.fecha_registro.date_hierarchy"
-			          }
-			        },
-			        "paciente.fecha_registro.year": {
-			          "Target": {
-			            "Entity": "paciente.fecha_registro.year"
-			          }
+			    },
+			    "entity__measure.ingresos_totales_por_paciente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Ingresos totales por paciente"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "paciente.fecha_registro.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "paciente.fecha_registro.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_registro_date_hierarchies_have_fecha_registro_years"
+			          "ingresos totales por paciente": {
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
+			    "medico.posible_hospital_destino": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medicos",
+			          "ConceptualProperty": "Posible Hospital Destino"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "posible hospital destino": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
 			    "paciente_fecha_registro_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "pacientes"
@@ -3233,6 +3232,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "pacientes_have_consultas"
+			        }
+			      ]
+			    },
+			    "medico_has_posible_hospital_destino": {
+			      "Binding": {
+			        "ConceptualEntity": "medicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medico": {
+			          "Target": {
+			            "Entity": "medico"
+			          }
+			        },
+			        "medico.posible_hospital_destino": {
+			          "Target": {
+			            "Entity": "medico.posible_hospital_destino"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medico"
+			            },
+			            "Object": {
+			              "Role": "medico.posible_hospital_destino"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medicos_have_posible_hospital_destinos"
+			        }
+			      ]
+			    },
+			    "consulta_has_entity__measure_ingresos_totales_por_paciente": {
+			      "Binding": {
+			        "ConceptualEntity": "consultas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "consulta": {
+			          "Target": {
+			            "Entity": "consulta"
+			          }
+			        },
+			        "entity__measure.ingresos_totales_por_paciente": {
+			          "Target": {
+			            "Entity": "entity__measure.ingresos_totales_por_paciente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "consulta"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ingresos_totales_por_paciente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "consultas_have_ingresos_totales_por_paciente"
 			        }
 			      ]
 			    },
@@ -4658,6 +4723,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "paciente_ID_are_names_IDs_of_pacientes"
+			        }
+			      ]
+			    },
+			    "paciente_fecha_registro_date_hierarchy_has_paciente_fecha_registro_year": {
+			      "Binding": {
+			        "ConceptualEntity": "pacientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "paciente.fecha_registro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.date_hierarchy"
+			          }
+			        },
+			        "paciente.fecha_registro.year": {
+			          "Target": {
+			            "Entity": "paciente.fecha_registro.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "paciente.fecha_registro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "paciente.fecha_registro.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_registro_date_hierarchies_have_fecha_registro_years"
 			        }
 			      ]
 			    },

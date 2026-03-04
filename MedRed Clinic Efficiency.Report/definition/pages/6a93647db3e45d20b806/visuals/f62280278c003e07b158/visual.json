@@ -306,7 +306,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Outliers de Ingresos y su Duracion Promedio'"
+                  "Value": "'Outliers de Ingresos con Duracion Promedio'"
                 }
               }
             },
@@ -492,7 +492,7 @@
         }
       },
       {
-        "name": "2312d3256d481e4b5487",
+        "name": "316aafd4dab454689b97",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -511,7 +511,7 @@
         "type": "Advanced"
       },
       {
-        "name": "6140011e4ed0909a4c2d",
+        "name": "a3d94dc7bd96c11e6720",
         "field": {
           "Measure": {
             "Expression": {
@@ -525,7 +525,7 @@
         "type": "Advanced"
       },
       {
-        "name": "fd965547e01a66275345",
+        "name": "ce91f1aed4b73b87c256",
         "field": {
           "Aggregation": {
             "Expression": {

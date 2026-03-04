@@ -83,6 +83,18 @@ table medicos
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Posible Hospital Destino' =
+			
+			SWITCH( TRUE(),
+			    'medicos'[Nombre] IN {"Dra. Carolina Romero", "Dra. Adriana Rodríguez"}, "Refuerzo: Hospital Simón Bolívar",
+			    'medicos'[Nombre] IN {"Dr. Ulises Ortiz", "Dra. Gloria Torres", "Dr. Luis Ramírez", "Dr. César López"}, "Refuerzo: Clínica Medellín",
+			    "Evaluación de Desempeño"
+			)
+		lineageTag: 2b138ed8-df35-4b7b-a28b-d8dd8097941a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition medicos = m
 		mode: import
 		source =

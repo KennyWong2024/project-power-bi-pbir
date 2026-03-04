@@ -17,18 +17,23 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "consultas"
+                        }
+                      },
+                      "Property": "Duracion_min"
                     }
                   },
-                  "Property": "Medida 2: Duración Promedio de Consulta"
+                  "Function": 1
                 }
               },
-              "queryRef": "_Measures.Medida 2: Duración Promedio de Consulta",
-              "nativeQueryRef": "Duración Promedio",
-              "displayName": "Duración Promedio"
+              "queryRef": "Sum(consultas.Duracion_min)",
+              "nativeQueryRef": "Duracion Promedio",
+              "displayName": "Duracion Promedio"
             }
           ]
         }
@@ -37,13 +42,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "_Measures"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "consultas"
+                      }
+                    },
+                    "Property": "Duracion_min"
                   }
                 },
-                "Property": "Medida 2: Duración Promedio de Consulta"
+                "Function": 1
               }
             },
             "direction": "Descending"

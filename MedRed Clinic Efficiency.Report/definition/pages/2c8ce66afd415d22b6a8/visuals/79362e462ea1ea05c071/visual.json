@@ -388,7 +388,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Hospital Universitario lidera en Altas y Clinica del Pais con un indice de Tratamientos superior al promedio'"
+                  "Value": "'Hospital Universitario lidera en Altas y Clinica Medellin tiene porcentaje bajo de Alta'"
                 }
               }
             },

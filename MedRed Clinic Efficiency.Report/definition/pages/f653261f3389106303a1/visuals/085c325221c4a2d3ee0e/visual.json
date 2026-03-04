@@ -1,67 +1,48 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "b5858510a56ca67088b3",
+  "name": "085c325221c4a2d3ee0e",
   "position": {
-    "x": 1192.219451371571,
-    "y": 8.0798004987531176,
-    "z": 3000,
-    "height": 63.740648379052367,
-    "width": 64.638403990024941,
-    "tabOrder": 3000
+    "x": 30.3448275862069,
+    "y": 5.5172413793103452,
+    "z": 0,
+    "height": 90.114942528735639,
+    "width": 413.79310344827587,
+    "tabOrder": 0
   },
   "visual": {
-    "visualType": "actionButton",
+    "visualType": "textbox",
     "objects": {
-      "icon": [
+      "general": [
         {
           "properties": {
-            "shapeType": {
-              "expr": {
-                "Literal": {
-                  "Value": "'back'"
-                }
-              }
-            },
-            "lineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#f1f5f9'"
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Analisis de Especialidad y Alta Medica",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "20pt",
+                      "color": "#f1f5f9"
                     }
                   }
-                }
+                ],
+                "horizontalTextAlignment": "center"
               }
-            }
-          },
-          "selector": {
-            "id": "default"
+            ]
           }
         }
       ]
     },
     "visualContainerObjects": {
-      "visualLink": [
+      "background": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
-                }
-              }
-            },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'2c8ce66afd415d22b6a8'"
+                  "Value": "false"
                 }
               }
             }
@@ -101,6 +82,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "howCreated": "InsertVisualButton"
+  }
 }

@@ -189,6 +189,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Hospital",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   }
 }

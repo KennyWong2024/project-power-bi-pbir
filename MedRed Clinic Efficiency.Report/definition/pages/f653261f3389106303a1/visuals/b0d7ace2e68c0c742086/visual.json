@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "b5858510a56ca67088b3",
+  "name": "b0d7ace2e68c0c742086",
   "position": {
-    "x": 1192.219451371571,
-    "y": 8.0798004987531176,
-    "z": 3000,
-    "height": 63.740648379052367,
-    "width": 64.638403990024941,
-    "tabOrder": 3000
+    "x": 1141.0473815461346,
+    "y": 21.546134663341647,
+    "z": 5000,
+    "height": 69.127182044887775,
+    "width": 72.718204488778056,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "actionButton",
@@ -27,9 +27,45 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#f1f5f9'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "shape": [
+        {
+          "properties": {
+            "tileShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'rectangle'"
+                }
+              }
+            },
+            "roundEdge": {
+              "expr": {
+                "Literal": {
+                  "Value": "100L"
                 }
               }
             }
@@ -83,7 +119,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#93C5FD'"
+                      "Value": "'#F1F5F9'"
                     }
                   }
                 }
@@ -93,6 +129,19 @@
               "expr": {
                 "Literal": {
                   "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

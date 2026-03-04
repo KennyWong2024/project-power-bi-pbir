@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "Analisis y Outliers",
+                    "value": "Analisis de Ingresos y Duracion",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "28pt",
+                      "fontSize": "20pt",
                       "color": "#f1f5f9"
                     }
                   }
