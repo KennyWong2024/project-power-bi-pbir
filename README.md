@@ -334,17 +334,6 @@ Profundización en la eficiencia clínica: ¿generan ingresos proporcionales al 
 
 ![Página 3 - Resolución](images/dashboard_page3.png)
 
-**En desarrollo.** Esta página cerrará la narrativa transformando los hallazgos en recomendaciones concretas y accionables para la dirección médica.
-
----
-
-## 🗺️ Roadmap
-
-- [x] Modelo de datos estrella con tabla puente
-- [x] Parámetro `RutaBase` para colaboración sin conflictos
-- [x] Página 1: Resumen Ejecutivo
-- [x] Página 2: Análisis de Eficiencia y Outliers (Box Plot)
-- [ ] Página 3: Resolución y llamadas a la acción
 
 ---
 
@@ -355,6 +344,10 @@ Profundización en la eficiencia clínica: ¿generan ingresos proporcionales al 
 ---
 
 *Proyecto desarrollado como parte de un programa de formación avanzada en Business Intelligence.*
-*Construido con ❤️ y mucho DAX.*
+*Desarrollado por*
+*Edlyn Lara*
+*Kenny Ramos*
+*Darickson Rodriguez*
+*Juan Carlos Guzman*
 
 </div>
