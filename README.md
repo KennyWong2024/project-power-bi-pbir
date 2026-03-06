@@ -345,9 +345,9 @@ Profundización en la eficiencia clínica: ¿generan ingresos proporcionales al 
 
 *Proyecto desarrollado como parte de un programa de formación avanzada en Business Intelligence.*
 *Desarrollado por*
-*Edlyn Lara*
-*Kenny Ramos*
-*Darickson Rodriguez*
+*Edlyn Lara,*
+*Kenny Ramos,*
+*Darickson Rodriguez y*
 *Juan Carlos Guzman*
 
 </div>
